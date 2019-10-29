@@ -17,7 +17,7 @@
 <html amp data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page" lang="${page.language}"
       data-sly-use.footer="footer.html"
       data-sly-use.redirect="redirect.html">
-<head data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+<head data-sly-use.clientlib="${'com.adobe.cq.wcm.core.components.models.ClientLibrary' @ type='css', primaryPath='clientlibs/amp', fallbackPath='clientlibs/site', categories='amp.base'}">
     <meta charset="UTF-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
