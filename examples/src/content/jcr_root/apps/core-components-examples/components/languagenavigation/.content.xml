@@ -3,5 +3,5 @@
     jcr:description="Navigation Component for the Core Components Library"
     jcr:primaryType="cq:Component"
     jcr:title="Navigation"
-    sling:resourceSuperType="core/wcm/components/langaugenavigation/v1/langaugenavigation"
+    sling:resourceSuperType="core/wcm/components/languagenavigation/v1/languagenavigation"
     componentGroup="Core Components Examples"/>
