@@ -18,19 +18,15 @@
   class="cmp-carousel"
   role="group"
   aria-label="${carousel.accessibilityLabel}"
-  aria-roledescription="carousel"
   data-cmp-is="carousel">
-  ${carousel.autoplay}
-    <sly data-sly-test.paige="${carousel.autoplay ? 'autoplay' : ''}"></sly>
-    ${paige}
     <amp-carousel data-sly-test="${carousel.items && carousel.items.size > 0}"
       class="cmp-carousel__content"
       type="slides"
-      ${paige @ context = 'unsafe'}
-      width="500"
+      width="350"
+      loop
       layout="responsive"
       delay="200"
-      height="450">
+      height="200">
         <div data-sly-repeat.item="${carousel.items}"
             data-sly-resource="${item.name @ decorationTagName='div'}"
             class="cmp-carousel__item${itemList.first ? ' cmp-carousel__item--active' : ''}"
