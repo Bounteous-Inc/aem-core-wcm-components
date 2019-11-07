@@ -24,8 +24,9 @@
       type="slides"
       width="350"
       loop
+      data-sly-attribute.autoplay="${carousel.autoplay}"
       layout="responsive"
-      delay="200"
+      delay="${carousel.delay}"
       height="200">
         <div data-sly-repeat.item="${carousel.items}"
             data-sly-resource="${item.name @ decorationTagName='div'}"
