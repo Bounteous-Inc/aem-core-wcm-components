@@ -31,7 +31,8 @@
 			 option
 			 id="tab-item-${tabList.index}"
 			 aria-controls="tab-panel-${tabList.index}"
-			 class="cmp-tabs__tab${isActive ? ' cmp-tabs__tab--active' : ''}"
+			 class="cmp-tabs__tab"
+			 data-sly-attribute.selected=${isActive}
 			 tabindex="${isActive ? '0' : '-1'}"
 			 data-cmp-hook-tabs="tab">
 			 ${tab.title}
