@@ -573,16 +573,6 @@
                             width="12"/>
                     </cq:responsive>
                 </teaser_1276818308>
-                <text_557507476
-                    cq:styleIds="[1550360114923]"
-                    jcr:created="{Date}2019-02-17T01:01:23.716+01:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2019-02-17T01:01:33.456+01:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="core/wcm/components/text/v2/text"
-                    text="&lt;p>No components found.&lt;/p>&#xa;"
-                    textIsRich="true"/>
             </responsivegrid>
         </root>
     </jcr:content>
