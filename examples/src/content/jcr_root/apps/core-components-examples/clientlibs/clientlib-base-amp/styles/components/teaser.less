@@ -26,9 +26,12 @@
 @cmp-examples-teaser-document-image-size: 24*@px;
 
 
-// Github and Adobe logos on top of page
+/*
+ * Github and Adobe logos on top of component pages
+ */
+
 .cmp-examples-teaser--document,
-.cmp-examples-text--hero ~ .teaser div:not(.cmp-examples-teaser--component) {
+.cmp-examples-text--hero ~ .teaser:not(.cmp-examples-teaser--component) {
 
     .cmp-teaser {
         position: relative;
@@ -92,8 +95,12 @@
     }
 }
 
-// component level
- .component {
+
+/*
+ * Component level styles
+ */
+
+.component {
     .cmp-teaser {
         background-color: #f5f5f5;
         color: #505050;
@@ -158,7 +165,10 @@
     }
 }
 
-// component (homepage)
+
+/*
+ * Component level styles - Homepage
+ */
 
 .cmp-examples-teaser--component {
     &.aem-GridColumn.aem-GridColumn--default--newline {
@@ -249,7 +259,3 @@
         overflow: hidden;
     }
 } 
-
-
-
-
