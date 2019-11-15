@@ -354,6 +354,8 @@
                             <exclude>**/.github/**</exclude>
                             <!-- Ignore mockito extensions config -->
                             <exclude>**/test/resources/mockito-extensions/*</exclude>
+                            <!-- Ignore generated extension folder -->
+                            <exclude>**/extension/**</exclude>
                         </excludes>
                     </configuration>
                     <executions>
