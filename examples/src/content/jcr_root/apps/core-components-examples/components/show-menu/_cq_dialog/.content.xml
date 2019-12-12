@@ -26,7 +26,14 @@
                                     <column
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/container">
-                                        <items jcr:primaryType="nt:unstructured"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <navigationId
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="The ID attribite to tie this button to. This is mostly used to be able to bind clicking events to toggle the navigation on or off on mobile or AMP."
+                                                fieldLabel="Navigation ID"
+                                                name="./navigationId"/>
+                                        </items>
                                     </column>
                                 </items>
                             </columns>
