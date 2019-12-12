@@ -18,5 +18,5 @@
     jcr:description="Navigation Component for the Core Components Library"
     jcr:primaryType="cq:Component"
     jcr:title="Navigation"
-    sling:resourceSuperType="core/wcm/components/navigation/v1/navigation"
+    sling:resourceSuperType="core/wcm/components/navigation/v2/navigation"
     componentGroup="Core Components Examples"/>
