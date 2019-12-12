@@ -88,6 +88,7 @@ public class NavigationImpl implements Navigation {
     private List<NavigationItem> items;
     private boolean skipNavigationRoot;
     private int structureStart;
+    private String navigationId;
 
     @PostConstruct
     private void initModel() {
@@ -97,6 +98,7 @@ public class NavigationImpl implements Navigation {
             structureDepth = -1;
         }
         navigationRootPage = properties.get(PN_NAVIGATION_ROOT, currentStyle.get(PN_NAVIGATION_ROOT, String.class));
+        navigationId = properties.get(PN_NAVIGATION_ID, currentStyle.get(PN_NAVIGATION_ID, String.class));
         if (currentStyle.containsKey(PN_STRUCTURE_START) || properties.containsKey(PN_STRUCTURE_START)) {
             //workaround to maintain the content of Navigation component of users in case they update to the current i.e. the `structureStart` version.
             structureStart = properties.get(PN_STRUCTURE_START, currentStyle.get(PN_STRUCTURE_START, 1));
@@ -156,6 +158,11 @@ public class NavigationImpl implements Navigation {
     @Override
     public String getAccessibilityLabel() {
         return accessibilityLabel;
+    }
+
+    @Override
+    public String getNavigationId() {
+        return navigationId;
     }
 
     @NotNull

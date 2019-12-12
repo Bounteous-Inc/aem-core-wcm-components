@@ -73,6 +73,14 @@ public interface Navigation extends ComponentExporter {
     String PN_STRUCTURE_DEPTH = "structureDepth";
 
     /**
+     * Name of the resource / configuration policy property that defines the ID attribute of the navigation element.
+     * The property should provide a String value.
+     *
+     * @since com.adobe.cq.wcm.core.components.models 12.11.0
+     */
+    String PN_NAVIGATION_ID = "navigationId";
+
+    /**
      * Returns the list of navigation items.
      *
      * @return a list of navigation items
@@ -99,6 +107,16 @@ public interface Navigation extends ComponentExporter {
      * @since com.adobe.cq.wcm.core.components.models 12.9.0
      */
     default String getAccessibilityLabel() {
+        throw new UnsupportedOperationException();
+    }
+
+    /**
+     * Retrieves an ID to be atteched as a attribute to the navigation.
+     *
+     * @return an string to be used as an ID attribute for the navigation element
+     * @since com.adobe.cq.wcm.core.components.models 12.11.0
+     */
+    default String getNavigationId() {
         throw new UnsupportedOperationException();
     }
 
