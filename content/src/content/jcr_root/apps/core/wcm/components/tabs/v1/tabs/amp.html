@@ -17,17 +17,18 @@
               data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
               data-sly-test="${tabs.items && tabs.items.size > 0}"
               data-sly-list.item="${tabs.items}"
+              id="${tabs.id}"
               class="cmp-tabs tabs-with-flex"
               role="tablist">
-    <div id="tab-item${tabs.tabsId}-${itemList.index}"
+    <div id="${tabs.id}-tab-${itemList.index}"
          class="cmp-tabs__tab"
          option
          selected="${item.name == tabs.activeItem}"
          role="tab"
-         aria-controls="tab-panel${tabs.tabsId}-${itemList.index}">${item.title}</div>
-    <div id="tab-panel${tabs.tabsId}-${itemList.index}"
-         aria-labelledby="tab-item${tabs.tabsId}-${itemList.index}"
+         aria-controls="${tabs.id}-tabpanel-${itemList.index}">${item.title}</div>
+    <div id="${tabs.id}-tabpanel-${itemList.index}"
+         class="cmp-tabs__tabpanel"
+         aria-labelledby="${tabs.id}-tab-${itemList.index}"
          data-sly-resource="${item.name @ decorationTagName='div'}"
-         role="tabpanel"
-         class="cmp-tabs__tabpanel"></div>
+         role="tabpanel"></div>
 </amp-selector>
