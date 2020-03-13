@@ -1,7 +1,6 @@
 {
     "id": "tabs-673620f4d1",
     "activeItem": "item_2",
-    "tabsId": "-root-responsivegrid-tabs-2",
     ":itemsOrder": [
         "item_1",
         "item_2"
@@ -21,7 +20,6 @@
                 "item_1_2": {
                     "id": "tabs-c2dc9e45de",
                     "activeItem": "item_1_2_2",
-                    "tabsId": "-root-responsivegrid-tabs-2-item_1-item_1_2",
                     ":itemsOrder": [
                         "item_1_2_1",
                         "item_1_2_2"

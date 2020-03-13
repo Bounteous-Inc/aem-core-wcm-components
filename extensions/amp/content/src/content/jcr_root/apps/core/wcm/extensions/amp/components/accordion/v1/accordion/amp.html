@@ -15,18 +15,23 @@
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
 <amp-accordion data-sly-use.accordion="com.adobe.cq.wcm.core.components.models.Accordion"
                data-sly-test="${accordion.items && accordion.items.size > 0}"
+               id="${accordion.id}"
                class="cmp-accordion"
                expand-single-section="${accordion.singleExpansion}">
     <section data-sly-repeat.item="${accordion.items}"
              class="cmp-accordion__item"
              expanded="${item.name in accordion.expandedItems}">
         <h3 data-sly-element="${accordion.headingElement @ context='elementName'}"
-            class="cmp-accordion__header">
+            id="${accordion.id}-button-${itemList.index}"
+            class="cmp-accordion__button"
+            aria-controls="${accordion.id}-panel-${itemList.index}">
             <span class="cmp-accordion__title">${item.title}</span>
             <span class="cmp-accordion__icon"></span>
         </h3>
         <div data-sly-resource="${item.name @ decorationTagName='div'}"
+             id="${accordion.id}-panel-${itemList.index}"
              class="cmp-accordion__panel"
-             role="region"></div>
+             role="region"
+             aria-labelledby="${accordion.id}-button-${itemList.index}"></div>
     </section>
 </amp-accordion>
